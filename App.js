@@ -1,12 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import TheMainView from "./views/TheMainView";
+
+const whoPrompts = require('./assets/prompts/who');
+const whatPrompts = require('./assets/prompts/what');
+const wherePrompts = require('./assets/prompts/where');
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <TheMainView prompts={{who: whoPrompts, what: whatPrompts, where: wherePrompts}}>
+      </TheMainView>
     </View>
   );
 }
