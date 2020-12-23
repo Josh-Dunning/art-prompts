@@ -58,7 +58,7 @@ export default class Spinner extends React.Component {
 
     getSlotContent(c) {
         return (
-            <Text style={{fontSize: 10}}>
+            <Text style={{fontSize: 20}}>
                 {this.props.prompts[this.charToPromptIdx(c)]}
             </Text>
         )
@@ -69,7 +69,8 @@ export default class Spinner extends React.Component {
             <View style={styles.container}>
                 <SlotMachine
                     padding={1}
-                    width='100%'
+                    width={315}
+                    height={100}
                     text={this.state.curPromptChar}
                     range={this.state.promptRangeSting}
                     renderTextContent={c => this.getSlotContent(c)}
@@ -88,7 +89,7 @@ export default class Spinner extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
+        alignItems: 'flex-start',
         justifyContent: 'center',
         width: '32%',
         height: '200%',

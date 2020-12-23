@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
         color: '#800000', //'#ffa1af',
         position: 'absolute',
         fontWeight: 'bold',
-        fontSize: 10,
+        fontSize: 20,
     }
 });

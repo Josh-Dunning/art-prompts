@@ -45,8 +45,6 @@ const what = [
     "making pottery",
     "hiding",
     "walking in circles",
-    "taking a picture with Forrest the Falcon",
-    "hanging out or onto….",
     "having a thumb war with a monkey",
     "drawing",
     "doing the laundry",

@@ -33,7 +33,7 @@ export default class TheMainView extends React.Component {
                 this.setState(() => ({spinning: spinning, pressed: pressed}), () => this.startSpin(i));
             })
         }
-
+    }
 
     startSpin(i) {
         setTimeout(() => {
